@@ -13,8 +13,8 @@
 }
 
 :root {
-  --main-color: #e84242;
-  --black-color: #121212;
+  --main-color: rgba(244, 226, 218, 0.4);
+  --green-color: #143a1b;
   --bordor: 0.1rem solid rgba(255, 255, 255, 0.4);
 }
 /* !base html codes */
@@ -32,7 +32,7 @@ html::-webkit-scrollbar {
 }
 html::-webkit-scrollbar-thumb {
   width: 0.8rem;
-  background-color: var(--black-color);
+  background-color: var(--green-color);
 }
 
 body {
@@ -42,6 +42,11 @@ section {
   padding: 3.5rem 7%;
 }
 
+h1 {
+  font-size: 5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -49,7 +54,7 @@ section {
   border-radius: 3rem;
   font-size: 1.7rem;
   color: #fff;
-  background-color: var(--black-color);
+  background-color: var(--green-color);
   cursor: pointer;
 }
 
@@ -66,10 +71,10 @@ section {
 
 .search-input {
   font-size: 1.5rem;
-  color: var(--black-color);
+  color: var(--green-color);
   padding: 1rem;
   text-transform: none;
-  border-radius: 3rem;
+  border-radius: 2rem;
   width: 30rem;
 }
 /* ! header start */
@@ -82,7 +87,7 @@ section {
   height: 5rem;
   display: flex;
   align-items: center;
-  border-radius: 3rem;
+  border-radius: 2rem;
   box-shadow: 0px 0px 25px 2px rgb(0 0 0 / 75%);
   transform: scaleY(0);
 }
@@ -93,7 +98,7 @@ section {
 .header .search-form i {
   font-size: 1.3rem;
   cursor: pointer;
-  color: var(--black-color);
+  color: var(--green-color);
 }
 .header .search-form input {
   width: 90%;
@@ -108,7 +113,7 @@ section {
   justify-content: space-between;
   padding: 0 7%;
   margin: 2rem 7%;
-  border-radius: 30rem;
+  border-radius: 2rem;
   box-shadow: 0 0 17px -2px rgba(0, 0, 0, 0.75);
   position: sticky;
   top: 0;
@@ -118,12 +123,12 @@ section {
 .header .navbar a {
   margin: 0 1rem;
   font-size: 1.4rem;
-  color: var(--black-color);
+  color: var(--green-color);
   border-bottom: 0.1rem solid transparent;
 }
 .header .navbar .active,
 .header .navbar a:hover {
-  border-color: var(--main-color);
+  border-color: var(--green-color);
   padding-bottom: 0.5rem;
 }
 
@@ -132,6 +137,7 @@ section {
   font-size: 2rem;
   margin-left: 2rem;
   background-color: transparent;
+  color: #143a1b;
 }
 .header .cart-item-container {
   position: absolute;
@@ -139,9 +145,11 @@ section {
   height: calc(100vh - 14rem);
   width: 35rem;
   background-color: #fff;
-  color: var(--black-color);
+  color: var(--green-color);
   box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
   right: -100%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 .header .cart-item-container.active {
   right: 3rem;
@@ -167,18 +175,18 @@ section {
   right: 1.2rem;
   font-size: 1.4rem;
   cursor: pointer;
-  color: var(--black-color);
+  color: var(--green-color);
 }
 
 .header .cart-item-container .cart-item .content h3 {
   font-size: 1.3rem;
-  color: var(--black-color);
+  color: var(--green-color);
   padding-bottom: 0.5rem;
 }
 
 .header .cart-item-container .cart-item .content .price {
   font-size: 1.2rem;
-  color: var(--black-color);
+  color: var(--green-color);
 }
 .header .cart-item-container .btn {
   width: 100%;
@@ -193,7 +201,7 @@ section {
 /* !home start */
 .home {
   min-height: 103vh;
-  background: url(images/home.jpg) no-repeat;
+  background: url(images/home1.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: -13rem;
@@ -206,18 +214,17 @@ section {
 
 .home .content h3 {
   font-size: 5rem;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .home .content p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1.8rem;
-  padding: 1rem 0;
+  font-size: 2.3rem;
+  font-weight: 500;
+  padding: 2rem 0;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  width: 40rem;
-  line-height: 2.4rem;
+  width: 45rem;
+  line-height: 3.2rem;
 }
 /* ! home end */
 
@@ -246,14 +253,18 @@ section {
 
 .menu .box-container .box .menu-category {
   font-size: 1.3rem;
+  color: var(--green-color);
 }
 .menu .box-container .box h3 {
   font-size: 1.6rem;
+  color: var(--green-color);
 }
 .menu .box-container .box .price {
   font-size: 1.4rem;
+  color: var(--green-color);
 }
 .menu .box-container .box .price span {
+  color: var(--green-color);
   font-size: 1.2rem;
   text-decoration: line-through;
 }
@@ -329,6 +340,7 @@ section {
   transform: translate(-50%, -50%);
   border-radius: 3rem;
 }
+
 /* ! products end */
 
 /* ! about start */
@@ -343,17 +355,21 @@ section {
 }
 .about .row .content {
   flex: 1 1 40rem;
+  color: var(--green-color);
 }
 
 .about .row h3 {
-  color: #fff;
   font-size: 3rem;
 }
 .about .row img {
   width: 100%;
+  transition: all 0.5s;
+}
+
+.about .row img:hover {
+  border-radius: 3rem;
 }
 .about .row .content p {
-  color: #fff;
   font-size: 1.6rem;
   text-align: justify;
   padding: 1rem 0;
@@ -366,6 +382,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
   gap: 1.5rem;
+  color: var(--green-color);
 }
 .review .box-container .box {
   border: var(--bordor);
@@ -396,7 +413,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  background-color: var(--black-color);
+  background-color: rgba(41, 95, 48, 0.841);
 }
 .contact .row .map {
   flex: 1 1 30rem;
@@ -436,7 +453,7 @@ section {
 }
 
 .contact .row form .btn {
-  color: var(--black-color);
+  color: var(--green-color);
   background-color: #fff;
 }
 /* !contact end */
@@ -495,7 +512,7 @@ section {
 /* !blogs end */
 /* !footer start */
 .footer {
-  background-color: var(--black-color);
+  background-color: var(--green-color);
   text-align: center;
 }
 .footer .search {
@@ -527,7 +544,7 @@ section {
   margin: 0.3rem;
 }
 .footer .share a:hover {
-  background-color: rgba(205, 100, 100, 0.4);
+  background-color: rgba(235, 147, 106, 0.4);
 }
 .footer .links {
   display: flex;
@@ -536,7 +553,7 @@ section {
   gap: 1rem;
 }
 .footer .links a {
-  background-color: rgba(205, 100, 100, 0.4);
+  background-color: rgba(235, 147, 106, 0.4);
   color: #fff;
   padding: 1rem 0.7rem;
   font-size: 1.3rem;
@@ -589,13 +606,15 @@ section {
     width: 30rem;
     box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
     right: -100%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
   }
 
   .header .navbar.active {
     right: 3rem;
   }
   .header .navbar a {
-    color: var(--black-color);
+    color: var(--green-color);
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
