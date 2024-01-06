@@ -1,4 +1,4 @@
-# Burger Restaurant Website
+# E.T Flower House Website
 
 This project is an example designed for a flower house's website. The site contains the flower house's menu, special products, customer reviews, about us page, contact information, and blog posts.
 
@@ -27,4 +27,5 @@ You can find gif files used for responsive design in this folder:
 ## Notes
 
 This project is created as an example and should not be used as an actual flower houses website.
+
 # flowerhouse-website
