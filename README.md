@@ -27,3 +27,4 @@ You can find gif files used for responsive design in this folder:
 ## Notes
 
 This project is created as an example and should not be used as an actual flower houses website.
+# flowerhouse-website
